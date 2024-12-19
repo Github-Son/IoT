@@ -1,0 +1,485 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #364f6b;
+}
+
+.menu {
+    float: right;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ebebe8;
+    z-index: 1;
+    border-bottom: 1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+}
+
+/* nav ul li a:hover {
+    text-decoration: underline;
+} */
+
+.menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 20px;
+    float: left;
+    background-color: #4154f1;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu a:hover:before, .menu li:hover > a:before, .menu .actived:before {
+    visibility: visible;
+    width: 40px;
+}
+
+/* SECTIONS */
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.column {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column .description {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #364f6b;
+}
+
+/* ADMINISTRATION */
+.columns {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.columns .administration {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #364f6b;
+}
+
+.columns .description {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #364f6b;
+}
+
+.column .thanks {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #364f6b;
+}
+
+/* H2, H3, H4 */
+h2 {
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+h3 {
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+h4 {
+    font-family: 'Comic Sans MS';
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 40px;
+}
+
+/* A - BUTTONS */
+a.btn-blue {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.btn-blue:hover {
+    background: #fc5185;
+    text-decoration: none;
+}
+
+a.btn-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.btn-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+/* MATERIALS & ASSIGNMENTS */
+.paragraph {
+    margin: 10px 14px 10px 14px;
+    padding: 10px 14px 10px 14px;
+}
+
+.para-list {
+    margin: 5px 14px 5px 14px;
+    padding: 5px 14px 5px 14px;
+}
+
+.para-list-a {
+    margin: 5px 14px 5px 23px;
+    padding: 5px 14px 5px 23px;
+}
+
+.para-list-b {
+    margin: 5px 14px 5px 43px;
+    padding: 5px 14px 5px 43px;
+}
+
+.para-list-c {
+    margin: 5px 14px 5px 54px;
+    padding: 5px 14px 5px 54px;
+}
+
+.para-list-d {
+    margin: 5px 14px 5px 33px;
+    padding: 5px 14px 5px 33px;
+}
+
+.middle {
+    text-align: center;
+    width: 100%;
+}
+
+/* IMAGES */
+.image-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.image-card img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.image-card p {
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+.review-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.review-card img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#about {
+    background: #dedede;
+    padding: 25px 0px 25px 0px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.titles {
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 1px;
+    color: #364f6b;
+}
+
+/* .actives {
+    background-color: #444;
+    margin: 2px 2px;
+} */
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    margin-top: 20px;
+}
+
+/* CONTAINERS */
+.containers {
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+}
+
+.containers .assignment {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #364f6b;
+}
+
+/* TABLE */
+.col-sm-6 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+}
+
+.col-sm-6 .bg {
+    color: #f1749a;
+    background-color: #f1749a;
+}
+
+.col-sm-4 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+}
+
+.col-sm-5 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+}
+
+.col-sm-7 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+}
+
+.col-sm-12 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+}
+
+.cols-sm-12 {
+    text-decoration: none;
+    font-family: 'Comic Sans MS';
+    font-size: 15px;
+}
+
+.form-center {
+    padding-left: 400px;
+    padding-right: 400px;
+    font-family: 'Comic Sans MS';
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.table a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Comic Sans MS';
+    color: #444;
+}
+
+/* .bg {
+    color: #fc5185;
+    background-color: #fc5185;
+} */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: darkgrey;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: double;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #3f72af;
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    /* padding: 1 18px; */
+    /* background-color: white; */
+    background-color: #ededed;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-card {
+        width: 50%;
+    }
+
+    .review-card {
+        width: 50%;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
